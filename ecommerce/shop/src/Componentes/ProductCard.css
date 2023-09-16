@@ -1,23 +1,21 @@
 
-article{
+.cardProduct{
     /* border: 1px solid; */
     /* border-radius: 3px; */
     margin: 5px;
     padding: 5px;
     box-shadow: 0 0 6px 2px;
+ 
 }
-article img{
+.cardProduct img{
     width: 200px;
     padding: 10px;
 }
-article h3{
-    color:black;
-  
-}
-button {
+
+.cardProduct button {
     height: 30px;
     font-size: 1.2rem;
     background-color: rgb(180, 5, 180);
     color: white;
-
+border-radius: 4px;
 }

@@ -1,18 +1,10 @@
-import React, { useState } from "react";
-import  "./Header.css"
+import React from "react";
+import SearchBar from "./SearhBar";
 
-function Header(){
-const [Active,setActive]=useState();
-return(
-    
-  <form >
-      <button className="item2">Categorias</button>
-      <button className="item3">Ofertas</button>
-      <button className="item4">Crear tu Cuenta</button>
-      <button className="item5">Ingresar</button>
- </form>
-      
-)
+const Header=()=>{
+    return(
+       <SearchBar/>
+    )
 }
 
-export default Header;
+export default Header
