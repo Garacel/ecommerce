@@ -2,4 +2,7 @@
 main{
    background-color:#e7e1e1; 
 }
-
+header{
+   border-bottom: solid 1px;
+   border-color: white;
+}

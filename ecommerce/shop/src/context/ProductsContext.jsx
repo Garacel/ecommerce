@@ -9,6 +9,12 @@ export const ProductContextProvider = ({children})=>{
     const[isLoading,setIsLoading] = useState(true);
     const[error,setError] =useState(null);
 
+ const [cart,updateCart] = useState ([]);
+const addToCart = (prod)=>{
+    updateCart(prod);
+};
+
+
 const fethData = async () => {
     try{
         setError(null);
@@ -28,7 +34,7 @@ useEffect(()=>{
 },[]);
 return(
     <ProductContext.Provider
-    value={{products, isLoading, error}}>
+    value={{products, isLoading, error,addToCart}}>
         {children}
     </ProductContext.Provider>
 );
