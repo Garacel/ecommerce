@@ -1,16 +1,18 @@
 import React from "react"
 import "./App.css"
 import { ProductContextProvider } from "./context/ProductsContext"
+import { useState } from "react"
 import ProductCard from "./Componentes/ProductCard"
-import SearchBar from "./Componentes/SearhBar"
 import Header from "./Componentes/Header"
 
 function App() {
+  const [searchText, setSearchText] = useState('');
+
   return (
    <ProductContextProvider>
-    <nav> <Header/> </nav>
+    <nav> <Header searchText={searchText} setSearchText={setSearchText}/> </nav>
     <article>Carrusel</article>
-     <ProductCard/>
+     <ProductCard searchText={searchText}/>
 <article>Otro carrusel</article>
 <footer></footer>
   </ProductContextProvider>

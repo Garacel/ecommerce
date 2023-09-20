@@ -1,10 +1,13 @@
-import React from "react";
-import SearchBar from "./SearhBar";
+import SearchBar from './SearchBar';
 
-const Header=()=>{
-    return(
-       <SearchBar/>
-    )
+function Header({searchText, setSearchText}) {
+
+  return (
+    <header>
+      <h1>Shop</h1>
+      <SearchBar searchText={searchText} setSearchText={setSearchText}/>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
