@@ -1,12 +1,14 @@
 import SearchBar from './SearchBar';
+import "./Header.css";
+
 
 function Header({searchText, setSearchText}) {
 
   return (
     <header>
-      <h1>Shop</h1>
       <SearchBar searchText={searchText} setSearchText={setSearchText}/>
-    </header>
+   
+  </header>
   );
 }
 

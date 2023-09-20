@@ -1,4 +1,5 @@
-
+import "./SearchBar.css"
+import { AiOutlineSearch } from 'react-icons/Ai';
 function SearchBar  ({searchText, setSearchText}) {
     const handleSearchChange = (e) => {
           setSearchText(e.target.value);
@@ -6,14 +7,17 @@ function SearchBar  ({searchText, setSearchText}) {
 
     return(
         <form >
-            <label htmlFor="">Productos</label>
+            
         <input 
         type="search"
         name="search"
         value={searchText}
         onChange={handleSearchChange}
-        placeholder="Buscar..." />
+        placeholder="Search Products or Category" />
+        <label htmlFor="">  </label>
+      
         </form>
+        
     )
 };
 

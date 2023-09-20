@@ -5,17 +5,38 @@
     margin: 5px;
     padding: 5px;
     box-shadow: 0 0 6px 2px;
- 
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+  
 }
-.cardProduct img{
+img{
     width: 200px;
     padding: 10px;
 }
 
 .cardProduct button {
-    height: 30px;
-    font-size: 1.2rem;
-    background-color: rgb(180, 5, 180);
-    color: white;
+    
+    font-size: 1.5rem;
+    background-color:white;
+    color: #7c5ccc; 
+    padding: 10px;
 border-radius: 4px;
+text-transform:capitalize;
+border-color: #7c5ccc;
+}
+button:hover{
+   border-color:  red;
+   color: red;
+}
+.Products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 2rem; 
+   
+}
+.noProducts{
+    color: #7c5ccc;
+    font-size: 50px;
+
 }

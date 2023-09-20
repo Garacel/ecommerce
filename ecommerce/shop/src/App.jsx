@@ -10,11 +10,13 @@ function App() {
 
   return (
    <ProductContextProvider>
+    
     <nav> <Header searchText={searchText} setSearchText={setSearchText}/> </nav>
-    <article>Carrusel</article>
-     <ProductCard searchText={searchText}/>
-<article>Otro carrusel</article>
-<footer></footer>
+   
+   <main> <ProductCard searchText={searchText}/> </main>  
+
+<footer> </footer>
+
   </ProductContextProvider>
   )
   
